@@ -5,7 +5,7 @@ body{
 }
 
 a{
-    text-decoration: none; /* 下線の削除 */
+    text-decoration-line: none; /* 下線の削除 */
     color: inherit;  /* 親要素のスタイルに色を合わせる */
 }
 
