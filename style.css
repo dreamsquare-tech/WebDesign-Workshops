@@ -10,6 +10,7 @@ a{
 }
 
 /*ヘッダーのスタイル実装----------------------------------*/
+
 .header{
     width: 100%;
     height: 80px;
@@ -46,28 +47,33 @@ a{
     margin-left: 20px;
 }
 
-.langage {
+.contact {
     width: fit-content;
     display: flex; /*横並び*/
-}
-
-.langage .icon{
+    padding: 7px 30px;
+    border: solid 0.5px #060606;
+    border-radius: 100px; /*丸み*/
     margin: auto 0;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.langage .select {
-    margin: auto 0;
-    margin-left: 5px;
     margin-right: 20px;
 }
 
-.langage p{
-    width: fit-content;
-    margin: auto 0;
+.contact .icon{
+    margin: 0;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.contact p{
+    width: fit-content;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.hamburger {
+    margin: auto 0;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 /*メインのスタイル実装--------------------------------*/
@@ -75,30 +81,26 @@ a{
 /*トップイメージのスタイル*/
 .topimage{
     width: 100%;
-    height: 100%;
-}
-
-/*全体を中央に配置*/
-.center-frame{
-    width: 1013px;
-    margin: 0 auto;
+    height: 1000px;
+    object-fit: cover;
 }
 
 /*おすすめセクションのスタイル*/
-.recommend {
+.recommend { 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 	flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
-.recommend .topic{
-    width: 300px;
+.recommend .topic img{
+    width: 100%;
 }
 
 .recommend .topic p{
-    width: 300px;
+    width: 100%;
     overflow-wrap: break-word; /*テキストの折り返し*/
+    margin: 0;
 }
 
 /*SECTION全体のスタイル*/
@@ -113,16 +115,18 @@ a{
 }
 
 .button{
-    padding: 10px 80px;
+    width: 200px ;
+    text-align: center; /*文字を中心に*/
+    padding: 10px 10px;
     border: solid 0.5px #060606;
     border-radius: 100px; /*丸み*/
-    display: inline-block;
+    display: block;
+    margin: 0px auto;
     margin-top: 50px;
 }
 
 /*SECTION1のスタイル*/
 .section1{
-    text-align: center; /*要素をすべて中央寄せ*/
     margin-top: 100px;
 }
 
@@ -132,13 +136,14 @@ a{
 }
 
 .section1 .news h4{
-    width: fit-content;
+    width: 100%;
     color: #656565;
+    overflow-wrap: break-word; /*テキストの折り返し*/
     margin: 0;
 }
 
 .section1 .news .detail{
-    width: fit-content;
+    width: 100%;
     color: #828282;
     display: flex;
     margin: 10px 0px 10px 0px;
@@ -150,7 +155,6 @@ a{
 
 /*SECTION2のスタイル*/
 .section2{
-    text-align: center; /*要素をすべて中央寄せ*/
     margin-top: 100px;
 }
 
@@ -168,13 +172,8 @@ a{
 .snslink {
     width: fit-content;
     margin: 0 auto;
+    text-align: center;
     margin-top: 100px;
-}
-
-.snslink a{
-    width: fit-content;
-    height: fit-content;
-    margin: 0px 20px;
 }
 
 /*フッターのスタイル実装------------------------------*/
@@ -202,4 +201,106 @@ a{
     color: #828282;
     display: block;
     margin-bottom: 30px;
+}
+
+
+/*PC用レスポンシブ*/
+@media screen and (1024px < width) {
+
+    /*全体を中央に配置*/
+    .center-frame{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .recommend .topic{
+        width: 270px;
+        height: fit-content;
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
+
+    .snslink a{
+        margin: 0px 20px;
+    }
+}
+
+
+/*タブレット用レスポンシブ*/
+@media screen and (685px < width <= 1024px) {
+
+    /*全体を中央に配置*/
+    .center-frame{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .recommend .topic{
+        width: 270px;
+        height: fit-content;
+        margin-top: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+
+    .snslink a{
+        margin: 0px 20px;
+    }
+}
+
+
+/*スマホ用レスポンシブ*/
+@media screen and (width <= 685px) { 
+
+    /*全体を中央に配置*/
+    .center-frame{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .recommend .topic{
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 250px;
+    }
+
+    .snslink a{
+        margin: 0px 10px;
+    }
 }
