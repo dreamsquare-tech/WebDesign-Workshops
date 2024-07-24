@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.header .frame {
+    width: fit-content;
+    display: flex;
+}
+
+.header .frame li{
+    display: inline;
+    list-style: none;
+}
+
+.header .frame p {
+    width: auto;
+}
+
+.recommend {
+    display: flex;
+	flex-wrap: wrap;
+}
