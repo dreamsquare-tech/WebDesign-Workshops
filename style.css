@@ -1,5 +1,6 @@
 /*ページ全体の余白削除------------------------------------*/
 body{
+    font-family: "MS Pゴシック" ;
     margin: 0;
     padding: 0;
 }
@@ -17,6 +18,8 @@ a{
     background: #ffff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
     position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
     display:flex;
     justify-content: space-between;
 }
@@ -78,19 +81,24 @@ a{
 
 /*メインのスタイル実装--------------------------------*/
 
-/*トップイメージのスタイル*/
-.topimage{
-    width: 100%;
-    height: 1000px;
-    object-fit: cover;
+/*背景画像のスタイル*/
+main{
+    background-image: url('image/top_image.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
+
+.back-color{
+    background: #ffff;
+}
+
 
 /*おすすめセクションのスタイル*/
 .recommend { 
     display: flex;
     justify-content: center;
 	flex-wrap: wrap;
-    margin-top: 70px;
 }
 
 .recommend .topic img{
@@ -155,6 +163,7 @@ a{
 
 /*SECTION2のスタイル*/
 .section2{
+    background-color: rgb(255, 255, 255);
     margin-top: 100px;
 }
 
@@ -210,11 +219,41 @@ a{
     /*全体を中央に配置*/
     .center-frame{
         width: 900px;
+        padding-top: 30px;
         margin: 0 auto;
     }
 
     .hamburger {
         display: none;
+    }
+
+    /*タイトルのスタイル*/
+    .title{
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+
+    .title h2{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
+        width: 100%;
+        font-size: 80px;
+        margin: 0px;
+    }
+    
+    .title h1{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
+        width: 100%;
+        font-size: 120px;
+        margin: 0px;
+    }
+
+    .title img{
+        margin-top: 100px;
     }
 
     .recommend .topic{
@@ -242,6 +281,7 @@ a{
     /*全体を中央に配置*/
     .center-frame{
         width: 90%;
+        padding-top: 30px;
         margin: 0 auto;
     }
 
@@ -251,6 +291,35 @@ a{
 
     .contact{
         display: none;
+    }
+
+    /*タイトルのスタイル*/
+    .title{
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 380px;
+        padding-bottom: 300px;
+    }
+
+    .title h2{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
+        width: 100%;
+        font-size: 50px;
+        margin: 0px;
+    }
+    
+    .title h1{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
+        width: 100%;
+        font-size: 100px;
+        margin: 0px;
+    }
+
+    .title img{
+        margin-top: 100px;
     }
 
     .recommend .topic{
@@ -278,6 +347,7 @@ a{
     /*全体を中央に配置*/
     .center-frame{
         width: 90%;
+        padding-top: 30px;
         margin: 0 auto;
     }
 
@@ -287,6 +357,35 @@ a{
 
     .contact{
         display: none;
+    }
+
+    /*タイトルのスタイル*/
+    .title{
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 430px;
+        padding-bottom: 300px;
+    }
+
+    .title h2{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
+        width: 100%;
+        font-size: 30px;
+        margin: 0px;
+    }
+    
+    .title h1{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /*シャドウ*/
+        width: 100%;
+        font-size: 50px;
+        margin: 0px;
+    }
+
+    .title img{
+        margin-top: 100px;
     }
 
     .recommend .topic{
