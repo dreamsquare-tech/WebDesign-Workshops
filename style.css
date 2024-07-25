@@ -195,7 +195,7 @@ main{
 .footer ul{
     padding: 0px;
     width: fit-content;
-    margin: 30px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
 }
 
 .footer li{
@@ -232,7 +232,7 @@ main{
         width: fit-content;
         text-align: center;
         margin: 0 auto;
-        padding-top: 300px;
+        padding-top: 350px;
         padding-bottom: 300px;
     }
 
@@ -253,7 +253,7 @@ main{
     }
 
     .title img{
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .recommend .topic{
@@ -298,7 +298,7 @@ main{
         width: fit-content;
         text-align: center;
         margin: 0 auto;
-        padding-top: 380px;
+        padding-top: 370px;
         padding-bottom: 300px;
     }
 
@@ -319,7 +319,7 @@ main{
     }
 
     .title img{
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .recommend .topic{
@@ -364,7 +364,7 @@ main{
         width: fit-content;
         text-align: center;
         margin: 0 auto;
-        padding-top: 430px;
+        padding-top: 380px;
         padding-bottom: 300px;
     }
 
@@ -385,7 +385,7 @@ main{
     }
 
     .title img{
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .recommend .topic{
