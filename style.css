@@ -229,7 +229,8 @@ main{
 
     /*タイトルのスタイル*/
     .title{
-        width: fit-content;
+        background-color: rgba(0,0,0,0.2);
+        width:100%;
         text-align: center;
         margin: 0 auto;
         padding-top: 350px;
@@ -295,9 +296,10 @@ main{
 
     /*タイトルのスタイル*/
     .title{
-        width: fit-content;
+        background-color: rgba(0,0,0,0.2);
+        width:100%;
         text-align: center;
-        margin: 0 auto;
+        padding: 0 auto;
         padding-top: 370px;
         padding-bottom: 300px;
     }
@@ -361,9 +363,10 @@ main{
 
     /*タイトルのスタイル*/
     .title{
-        width: fit-content;
+        background-color: rgba(0,0,0,0.2);
+        width:100%;
         text-align: center;
-        margin: 0 auto;
+        padding: 0 auto;
         padding-top: 380px;
         padding-bottom: 300px;
     }
