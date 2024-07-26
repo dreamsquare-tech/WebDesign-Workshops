@@ -61,6 +61,7 @@ a{
 }
 
 .contact .icon{
+    /* filter: invert(10%) sepia(99%) saturate(7468%) hue-rotate(300deg) brightness(106%) contrast(118%); */
     margin: 0;
     margin-left: 5px;
     margin-right: 5px;
@@ -122,6 +123,8 @@ main{
     margin-top: 50px;
 }
 
+/*ボタン装飾*/
+
 .button{
     width: 200px ;
     text-align: center; /*文字を中心に*/
@@ -131,6 +134,20 @@ main{
     display: block;
     margin: 0px auto;
     margin-top: 50px;
+    background: #fff;
+}
+
+.button:hover{
+    width: 200px ;
+    text-align: center; /*文字を中心に*/
+    padding: 10px 10px;
+    border: solid 0.5px #060606;
+    border-radius: 100px; /*丸み*/
+    display: block;
+    margin: 0px auto;
+    margin-top: 50px;
+    background: #060606;
+    color: #fff;
 }
 
 /*SECTION1のスタイル*/
@@ -183,6 +200,22 @@ main{
     margin: 0 auto;
     text-align: center;
     margin-top: 100px;
+}
+
+.icon_instagram:hover{
+    filter: invert(10%) sepia(99%) saturate(7468%) hue-rotate(300deg) brightness(106%) contrast(118%);
+}
+
+.icon_youtube:hover{
+    filter: invert(10%) sepia(99%) saturate(7468%) hue-rotate(358deg) brightness(106%) contrast(118%);
+}
+
+.icon_facebook:hover{
+    filter: invert(10%) sepia(99%) saturate(7468%) hue-rotate(200deg) brightness(106%) contrast(118%);
+}
+
+.icon_mail:hover{
+    filter: invert(10%) sepia(99%) saturate(7468%) hue-rotate(150deg) brightness(106%) contrast(118%);
 }
 
 /*フッターのスタイル実装------------------------------*/
