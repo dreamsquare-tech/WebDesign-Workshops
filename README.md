@@ -1,6 +1,6 @@
 # デザイン×プログラミング講座
 
-[株式会社DREAMSQUARE](https://www.minecraft.net/ja-jp)　安藤 太亮（あんどう たいすけ）
+[株式会社DREAMSQUARE](https://dreamsquare.tech)　安藤 太亮（あんどう たいすけ）
 
 - [Web版のVSCodeはこちら](https://vscode.dev/?vscode-lang=ja-jp)
 
