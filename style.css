@@ -55,7 +55,7 @@ a{
     display: flex; /*横並び*/
     padding: 7px 30px;
     border: solid 0.5px #060606;
-    
+
     /*ここに何かを記述*/
 
     margin: auto 0;
@@ -143,7 +143,9 @@ main{
     text-align: center; /*文字を中心に*/
     padding: 10px 10px;
     border: solid 0.5px #060606;
-    border-radius: 100px; /*丸み*/
+    
+    /*ここに何かを記述*/
+
     display: block;
     margin: 0px auto;
     margin-top: 50px;
