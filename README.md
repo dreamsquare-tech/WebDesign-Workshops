@@ -10,6 +10,8 @@
 
 - [Figmaデザインテンプレートはこちら](https://www.figma.com/proto/DApg2LJfIj9Yykl7ZaOWxd/PROFILE-SITE?node-id=1-3&t=yTWzBxkXyVrzAMuT-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1)
 
+- [サンプルサイトはこちら](https://dreamsquare-tech.github.io/WebDesign-Workshops/) 
+
 ## 本講義の目標
 
 Webサイトの仕組みについて学び、要件定義をもとにデザインする力を身に着ける。
