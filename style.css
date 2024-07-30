@@ -55,13 +55,14 @@ a{
     display: flex; /*横並び*/
     padding: 7px 30px;
     border: solid 0.5px #060606;
-    border-radius: 100px; /*丸み*/
+    
+    /*ここに何かを記述*/
+
     margin: auto 0;
     margin-right: 20px;
 }
 
 .contact .icon{
-    /* filter: invert(10%) sepia(99%) saturate(7468%) hue-rotate(300deg) brightness(106%) contrast(118%); */
     margin: 0;
     margin-left: 5px;
     margin-right: 5px;
