@@ -99,16 +99,9 @@ Webサイトの仕組みについて学び、要件定義をもとにデザイ�
 
 - ### 2.3. HTMLを書いてみよう
 
-    |コード|機能|
-    |---|---|
-    |`<!DOCTYPE html>`|HTMLの文章であることを宣言|
-    |`<html> </html>`||
-    |`<head> </head>`||
-    |`<title> </title>`||
-    |`<body> </body>`||
+    VSCode上で新しいHTMLファイルを作成してください。ファイル名は任意のもので構いませんが、拡張子は`.html`とすることに注意してください。
 
-    上で紹介したコードをもとに、最低限のHTMLの構成は以下のようになります。
-
+    まず初めに、Webサイトを構成するのに最低限必要となるHMTLコードを記入します。
     ```html
     <!DOCTYPE html>
     <html>
@@ -123,36 +116,101 @@ Webサイトの仕組みについて学び、要件定義をもとにデザイ�
         </body>
     </html>
     ```
+
+    上で記入したコードにはそれぞれ以下のような機能を果たしています。
+
+    |コード|機能|
+    |---|---|
+    |`<!DOCTYPE html>`|HTMLの文章であることを宣言|
+    |`<html> </html>`|HTML文書全体を囲むタグです。|
+    |`<head> </head>`|サイト自体の設定を記述します。|
+    |`<title> </title>`|ブラウザのタブに表示されるページのタイトルを設定します。|
+    |`<body> </body>`|要素の内側にページのコンテンツを設定します。|
+
     次に、Webサイトの必要な情報を表示させるためのHTMLを紹介します。
 
     |コード|機能|
     |---|---|
-    |`<h1> </h1>`||
-    |`<h2> </h2>`||
-    |`<p> </p>`||
-    |`<a> </a>`||
-    |`<img>`||
-    |`<div>`||
+    |`<h1> </h1>`|見出しを表すタグです。HTMLには`<h1>`から`<h6>`までの見出しタグがあります。|
+    |`<p> </p>`|主に見出し以外の文章を記述するタグです。|
+    |`<a> </a>`|ハイパーリンク（クリックすると遷移するURL）を作成します。href属性にリンク先のURLを指定します。|
+    |`<img>`|画像を表示するタグです。src属性に画像のURL、alt属性に代替テキストを指定します。|
+    |`<div>`|複数の要素に対してスタイルやスクリプトを適用するためのグループ化を行うタグです。|
 
     上で紹介したコードを使って、簡単なWebサイトのHTMLを書いてみましょう。以下のコードは最低限のHTMLの構成のうち、`<body>`タグの中に記述してください。
 
     ```html
-    <div>
+    <div class="container">
+        <h1>ようこそ！</h1>
+        <p>ログインを完了してください</p>
+        <a id="myButton" href="#">クリック</a>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        
+    </script>
     ```
     
 - ### 2.4. CSSを書いてみよう
 
-    - クラスの概念
-    - IDの概念
+    VSCode上で新しいCSSファイル（ファイル名は`style.css`）を作成してください。
+
+    上で作成したHTMLにCSSを使ってスタイルを実装します。CSSでは、タグもしくはクラス（`.classname`のように記述）を指定することで、それぞれの要素に対してスタイルを宣言することができます。
+
+    ```css
+    html, body {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    a {
+        display: inline-block;
+        padding: 15px 50px;
+        font-size: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        background-color: #2490dd;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+        background-color: #71abe9;
+    }
+
+    #message {
+        color: green;
+        margin-top: 20px;
+    }
+    ```
 
 - ### 2.5. JavaScriptを書いてみよう
 
-    - ボタンを華やかに
+    以下のコードをHTMLファイルの`script`タグの内側に記述してください。
 
-- ### 2.6. Figmaを活用した実装
-
-    - 開発者モードについて
-    - プラグインについて
+    ```js
+    // JavaScriptコード
+    document.getElementById("myButton").addEventListener("click", function() {
+        document.getElementById("message").innerText = "ログイン完了";
+    });
+    ```
 
 ## 3. Webサイトのデザインの作り方
 
